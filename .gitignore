@@ -1,0 +1,41 @@
+# git ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+# *~
+
+# From https://gist.github.com/masahirosuzuka/6a333a0305e6903686c9
+# temp files
+*.bak
+*.bck
+*.kicad_pcb-bak
+*-cache.lib
+# *-rescue.lib
+ftp-lib-table
+
+# for external tools
+*.dsn
+
+# boms
+*.xml
+*.csv
+
+# Gerber/Drill Files
+*.gbr
+*.drl
+
+# specific binaries
+*.pdf
+*.png
+*.zip
+
+# 3D related, generated files
+*.FCStd*
+*.iam
+*.step
+*.emp
+*.ipt
+
+# DO include all files in library
+!library/**
