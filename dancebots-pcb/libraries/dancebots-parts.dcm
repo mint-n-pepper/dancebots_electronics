@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP L293
+D L293 Motor Driver
+$ENDCMP
+#
+$CMP LM358
+D Op amp (low power)
+K ampliop
+F ns/lm158.pdf
+$ENDCMP
+#
+#End Doc Library
