@@ -1,9 +1,9 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.6)
+(kicad_pcb (version 4) (host pcbnew 4.0.7)
 
   (general
     (links 80)
     (no_connects 0)
-    (area 99.949999 93.8 166.464286 155.200001)
+    (area 99.82381 93.8 166.464286 155.200001)
     (thickness 1.6)
     (drawings 61)
     (tracks 511)
@@ -59,8 +59,8 @@
     (mod_edge_width 0.15)
     (mod_text_size 1 1)
     (mod_text_width 0.15)
-    (pad_size 2 2)
-    (pad_drill 1)
+    (pad_size 1.4 2)
+    (pad_drill 0.8)
     (pad_to_mask_clearance 0)
     (aux_axis_origin 100 150)
     (grid_origin 100 150)
@@ -89,7 +89,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory gerberv7.02/))
+      (outputdirectory gerberv7.03/))
   )
 
   (net 0 "")
@@ -1019,7 +1019,7 @@
     )
   )
 
-  (module dancebots_fp:MOT-SPK-CONN (layer F.Cu) (tedit 59D0F24F) (tstamp 59C01E15)
+  (module dancebots_fp:MOT-SPK-CONN (layer F.Cu) (tedit 5AE1BD13) (tstamp 59C01E15)
     (at 106.5 108.5 270)
     (path /59BF4431)
     (fp_text reference J2 (at 0 5.08 270) (layer F.SilkS) hide
@@ -1035,13 +1035,13 @@
     (fp_line (start 2.95 6.25) (end 2.95 -0.7) (layer F.SilkS) (width 0.2))
     (fp_line (start -2.95 6.25) (end -2.95 -0.7) (layer F.SilkS) (width 0.2))
     (fp_line (start -2.95 6.25) (end 2.95 6.25) (layer F.SilkS) (width 0.2))
-    (pad 2 thru_hole oval (at -1 0 270) (size 1.6 2) (drill 0.8) (layers *.Cu *.Mask)
+    (pad 2 thru_hole oval (at -1 0 270) (size 1.4 2) (drill 0.8) (layers *.Cu *.Mask)
       (net 9 /MOT2-))
-    (pad 1 thru_hole oval (at 1 0 270) (size 1.6 2) (drill 0.8) (layers *.Cu *.Mask)
+    (pad 1 thru_hole oval (at 1 0 270) (size 1.4 2) (drill 0.8) (layers *.Cu *.Mask)
       (net 10 /MOT2+))
   )
 
-  (module dancebots_fp:MOT-SPK-CONN (layer F.Cu) (tedit 59D0F248) (tstamp 59C01E1B)
+  (module dancebots_fp:MOT-SPK-CONN (layer F.Cu) (tedit 5AE1BD24) (tstamp 59C01E1B)
     (at 143.5 108.5 90)
     (path /59BF3E30)
     (fp_text reference J3 (at 0 5.08 90) (layer F.SilkS) hide
@@ -1057,13 +1057,13 @@
     (fp_line (start 2.95 6.25) (end 2.95 -0.7) (layer F.SilkS) (width 0.2))
     (fp_line (start -2.95 6.25) (end -2.95 -0.7) (layer F.SilkS) (width 0.2))
     (fp_line (start -2.95 6.25) (end 2.95 6.25) (layer F.SilkS) (width 0.2))
-    (pad 2 thru_hole oval (at -1 0 90) (size 1.6 2) (drill 0.8) (layers *.Cu *.Mask)
+    (pad 2 thru_hole oval (at -1 0 90) (size 1.4 2) (drill 0.8) (layers *.Cu *.Mask)
       (net 11 /MOT1+))
-    (pad 1 thru_hole oval (at 1 0 90) (size 1.6 2) (drill 0.8) (layers *.Cu *.Mask)
+    (pad 1 thru_hole oval (at 1 0 90) (size 1.4 2) (drill 0.8) (layers *.Cu *.Mask)
       (net 12 /MOT1-))
   )
 
-  (module dancebots_fp:MOT-SPK-CONN (layer F.Cu) (tedit 59D0F0AE) (tstamp 59C01E28)
+  (module dancebots_fp:MOT-SPK-CONN (layer F.Cu) (tedit 5AE1BDAD) (tstamp 59C01E28)
     (at 144 143.5)
     (path /5996056A)
     (fp_text reference JP18 (at 0 5.08) (layer F.SilkS) hide
@@ -1079,9 +1079,9 @@
     (fp_line (start 2.95 6.25) (end 2.95 -0.7) (layer F.SilkS) (width 0.2))
     (fp_line (start -2.95 6.25) (end -2.95 -0.7) (layer F.SilkS) (width 0.2))
     (fp_line (start -2.95 6.25) (end 2.95 6.25) (layer F.SilkS) (width 0.2))
-    (pad 2 thru_hole oval (at -1 0) (size 1.6 2) (drill 0.8) (layers *.Cu *.Mask)
+    (pad 2 thru_hole oval (at -1 0) (size 1.4 2) (drill 0.8) (layers *.Cu *.Mask)
       (net 2 GND))
-    (pad 1 thru_hole oval (at 1 0) (size 1.6 2) (drill 0.8) (layers *.Cu *.Mask)
+    (pad 1 thru_hole oval (at 1 0) (size 1.4 2) (drill 0.8) (layers *.Cu *.Mask)
       (net 6 "Net-(C7-Pad2)"))
   )
 
