@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name footprints)(type KiCad)(uri C:/Users/philipp/Git/dancebots_electronics/dancebots-pcb/libraries/footprints.pretty)(options "")(descr ""))
+  (lib (name LED_THT)(type KiCad)(uri ${KIGITHUB}/LED_THT.pretty)(options "")(descr ""))
+)
