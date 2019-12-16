@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name dancebots-pcb-rescue)(type Legacy)(uri ${KIPRJMOD}/dancebots-pcb-rescue.lib)(options "")(descr ""))
+  (lib (name dancebots-parts)(type Legacy)(uri ${KIPRJMOD}/libraries/dancebots-parts.lib)(options "")(descr ""))
+  (lib (name Connector_Generic)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Connector_Generic.lib)(options "")(descr ""))
+  (lib (name power)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/power.lib)(options "")(descr ""))
+  (lib (name Device)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Device.lib)(options "")(descr ""))
+)

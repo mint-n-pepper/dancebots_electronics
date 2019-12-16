@@ -1,247 +1,231 @@
-EESchema Schematic File Version 2
-LIBS:dancebots-parts
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
+EESchema Schematic File Version 4
 LIBS:dancebots-pcb-cache
-EELAYER 25 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Dancebots PCB"
-Date "2017-08-17"
-Rev "v7.0"
-Comp "RoboMINT"
-Comment1 "Credits to Raymond Oung for V1.0 - V6.0, this design is a transfer of V6.0 to KiCAD"
-Comment2 ""
+Date "2019-12-16"
+Rev "v7.2"
+Comp "mint & pepper"
+Comment1 "Deisgned by Raymond Oung"
+Comment2 "Transfer to Kicad (v7.0) by Philipp Reist"
 Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L LM386 U4
+L dancebots-parts:LM386 U4
 U 1 1 5995CD62
 P 8750 1950
 F 0 "U4" H 8800 2250 50  0000 L CNN
 F 1 "LM386" H 8800 2150 50  0000 L CNN
-F 2 "Housings_DIP:DIP-8_W7.62mm_LongPads" H 8850 2050 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 8850 2050 50  0001 C CNN
 F 3 "" H 8950 2150 50  0000 C CNN
-F 4 "000" H 8750 1950 60  0001 C CNN "PN"
+F 4 "2.54mm" H 8750 1950 50  0001 C CNN "Lead Spacing"
+F 5 "LM386N-4/NOPB" H 8750 1950 50  0001 C CNN "Part Number"
+F 6 "https://www.digikey.com/products/en?keywords=296-43960-5-ND" H 8750 1950 50  0001 C CNN "Product Link"
+F 7 "https://www.digikey.com/products/en?keywords=A120347-ND" H 8750 1950 50  0001 C CNN "Additional Component"
 	1    8750 1950
 	1    0    0    -1  
 $EndComp
 $Comp
-L L293 U2
+L dancebots-parts:L293 U2
 U 1 1 5995DA4E
 P 2075 4225
 F 0 "U2" H 1775 4775 60  0000 C CNN
 F 1 "L293" H 1825 4675 60  0000 C CNN
-F 2 "Housings_DIP:DIP-16_W7.62mm_LongPads" H 2075 4225 60  0001 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_LongPads" H 2075 4225 60  0001 C CNN
 F 3 "" H 2075 4225 60  0000 C CNN
+F 4 "2.54mm" H 2075 4225 50  0001 C CNN "Lead Spacing"
+F 5 "L293D" H 2075 4225 50  0001 C CNN "Part Number"
+F 6 "https://www.digikey.com/products/en?keywords=497-2936-5-ND%09" H 2075 4225 50  0001 C CNN "Product Link"
+F 7 "https://www.digikey.com/products/en?keywords=A120349-ND" H 2075 4225 50  0001 C CNN "Additional Component"
 	1    2075 4225
 	1    0    0    -1  
 $EndComp
 $Comp
-L LM7809CT U1
+L dancebots-parts:L4941 U1
 U 1 1 5995DAEF
 P 1725 1875
 F 0 "U1" H 1525 2075 50  0000 C CNN
 F 1 "L4941" H 1725 2075 50  0000 L CNN
 F 2 "dancebots_fp:TO-220" H 1725 1975 50  0001 C CIN
 F 3 "" H 1725 1875 50  0000 C CNN
-F 4 "000" H 1725 1875 60  0001 C CNN "PN"
+F 4 "2.54mm" H 1725 1875 50  0001 C CNN "Lead Spacing"
+F 5 "L4941BV" H 1725 1875 50  0001 C CNN "Part Number"
+F 6 "https://www.digikey.com/products/en?keywords=497-6695-5-ND" H 1725 1875 50  0001 C CNN "Product Link"
 	1    1725 1875
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D0
+L Device:LED D0
 U 1 1 5995DBB6
 P 2900 2075
 F 0 "D0" H 2900 2175 50  0000 C CNN
 F 1 "PWR" H 2900 1975 50  0000 C CNN
-F 2 "LEDs:LED_D5.0mm" H 2900 2075 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 2900 2075 50  0001 C CNN
 F 3 "" H 2900 2075 50  0000 C CNN
+F 4 "" H 2900 2075 50  0001 C CNN "If"
+F 5 "2.54mm" H 2900 2075 50  0001 C CNN "Lead Spacing"
+F 6 "https://www.sparkfun.com/products/9662" H 2900 2075 50  0001 C CNN "Product Link"
 	1    2900 2075
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R1
+L Device:R R1
 U 1 1 5995DC3F
 P 2900 1775
 F 0 "R1" V 2980 1775 50  0000 C CNN
 F 1 "150" V 2900 1775 50  0000 C CNN
 F 2 "dancebots_fp:RES" V 2830 1775 50  0001 C CNN
 F 3 "" H 2900 1775 50  0000 C CNN
+F 4 "10.16mm" H 2900 1775 50  0001 C CNN "Lead Spacing"
+F 5 "CF14JT150R" H 2900 1775 50  0001 C CNN "Part Number"
+F 6 "0.25W" H 2900 1775 50  0001 C CNN "Power Rating"
+F 7 "https://www.digikey.com/products/en?keywords=CF14JT150RCT-ND" H 2900 1775 50  0001 C CNN "Product Link"
 	1    2900 1775
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP1 C2
+L Device:CP1 C2
 U 1 1 5995DCC2
 P 2250 1975
 F 0 "C2" H 2275 2075 50  0000 L CNN
 F 1 "22uF" H 2275 1875 50  0000 L CNN
 F 2 "dancebots_fp:ELcap4.1mm" H 2250 1975 50  0001 C CNN
 F 3 "" H 2250 1975 50  0000 C CNN
+F 4 "16V" H 2250 1975 50  0001 C CNN "Voltage Rating"
+F 5 "4mm" H 2250 1975 50  0001 C CNN "Diameter"
+F 6 "2mm" H 2250 1975 50  0001 C CNN "Lead Spacing"
+F 7 "16MS522MEFC5X5" H 2250 1975 50  0001 C CNN "Part Number"
+F 8 "https://www.digikey.com/product-detail/en/rubycon/16MS522MEFC5X5/1189-4047-ND/3562760" H 2250 1975 50  0001 C CNN "Product Link"
 	1    2250 1975
 	1    0    0    -1  
 $EndComp
 $Comp
-L ATTINY861A-P U3
+L dancebots-parts:ATTINY261A-P U3
 U 1 1 5995DD9C
 P 5700 2075
 F 0 "U3" H 4800 3025 50  0000 C CNN
-F 1 "ATTINY861A-P" H 6450 1125 50  0000 C CNN
-F 2 "Housings_DIP:DIP-20_W7.62mm_LongPads" H 5750 2075 50  0001 C CIN
+F 1 "ATTINY261A-P" H 6450 1125 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_LongPads" H 5750 2075 50  0001 C CIN
 F 3 "" H 5700 2075 50  0000 C CNN
+F 4 "2.54mm" H 5700 2075 50  0001 C CNN "Lead Spacing"
+F 5 "ATTINY261A-PU" H 5700 2075 50  0001 C CNN "Part Number"
+F 6 "https://www.digikey.com/products/en?keywords=ATTINY261A-PU-ND" H 5700 2075 50  0001 C CNN "Product Link"
+F 7 "https://www.digikey.com/products/en?keywords=A120351-ND" H 5700 2075 50  0001 C CNN "Additional Component"
 	1    5700 2075
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C4
+L Device:C C4
 U 1 1 5995DE71
 P 4350 1425
 F 0 "C4" H 4375 1525 50  0000 L CNN
 F 1 "100nF" H 4375 1325 50  0000 L CNN
 F 2 "dancebots_fp:CAPC" H 4388 1275 50  0001 C CNN
 F 3 "" H 4350 1425 50  0000 C CNN
+F 4 "5.08mm" H 4350 1425 50  0001 C CNN "Lead Spacing"
+F 5 "C322C104M5U5TA7301" H 4350 1425 50  0001 C CNN "Part Number"
+F 6 "https://www.digikey.ch/products/en?keywords=399-9880-1-ND" H 4350 1425 50  0001 C CNN "Product Link"
+F 7 "50V" H 4350 1425 50  0001 C CNN "Voltage Rating"
 	1    4350 1425
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C3
+L Device:C C3
 U 1 1 5995DEEE
 P 3125 4025
 F 0 "C3" H 3000 4125 50  0000 L CNN
 F 1 "100nF" H 2875 3925 50  0000 L CNN
 F 2 "dancebots_fp:CAPC" H 3163 3875 50  0001 C CNN
 F 3 "" H 3125 4025 50  0000 C CNN
+F 4 "5.08mm" H 3125 4025 50  0001 C CNN "Lead Spacing"
+F 5 "C322C104M5U5TA7301" H 3125 4025 50  0001 C CNN "Part Number"
+F 6 "https://www.digikey.ch/products/en?keywords=399-9880-1-ND" H 3125 4025 50  0001 C CNN "Product Link"
+F 7 "50V" H 3125 4025 50  0001 C CNN "Voltage Rating"
 	1    3125 4025
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C5
-U 1 1 5995E02A
-P 9000 1400
-F 0 "C5" V 8775 1350 50  0000 L CNN
-F 1 "100nF" V 8850 1350 50  0000 L CNN
-F 2 "dancebots_fp:CAPC" H 9038 1250 50  0001 C CNN
-F 3 "" H 9000 1400 50  0000 C CNN
-F 4 "000" H 9000 1400 60  0001 C CNN "PN"
-	1    9000 1400
-	0    1    1    0   
-$EndComp
-$Comp
-L C C9
-U 1 1 5995E0FA
-P 9975 2100
-F 0 "C9" H 10000 2200 50  0000 L CNN
-F 1 "10pF" H 10000 2000 50  0000 L CNN
-F 2 "dancebots_fp:CAPC" H 10013 1950 50  0001 C CNN
-F 3 "" H 9975 2100 50  0000 C CNN
-F 4 "000" H 9975 2100 60  0001 C CNN "PN"
-	1    9975 2100
-	-1   0    0    1   
-$EndComp
-$Comp
-L CP1 C7
+L Device:CP1 C7
 U 1 1 5995E1C3
 P 9525 1950
 F 0 "C7" H 9550 2050 50  0000 L CNN
 F 1 "220uF" H 9550 1850 50  0000 L CNN
 F 2 "dancebots_fp:ElCap_6.4mm" H 9525 1950 50  0001 C CNN
 F 3 "" H 9525 1950 50  0000 C CNN
-F 4 "000" H 9525 1950 60  0001 C CNN "PN"
+F 4 "16V" H 9525 1950 50  0001 C CNN "Voltage Rating"
+F 5 "6.3mm" H 9525 1950 50  0001 C CNN "Diameter"
+F 6 "2.5mm" H 9525 1950 50  0001 C CNN "Lead Spacing"
+F 7 "16YXJ220MT16.3X11" H 9525 1950 50  0001 C CNN "Part Number"
+F 8 "https://www.digikey.ch/products/en?keywords=1189-1546-1-ND" H 9525 1950 50  0001 C CNN "Product Link"
 	1    9525 1950
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LM358 U5
+L dancebots-parts:LM358 U5
 U 1 1 5995F198
 P 8925 4675
 F 0 "U5" H 8875 4875 50  0000 L CNN
 F 1 "LM358" H 8875 4425 50  0000 L CNN
-F 2 "Housings_DIP:DIP-8_W7.62mm_LongPads" H 8925 4675 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 8925 4675 50  0001 C CNN
 F 3 "" H 8925 4675 50  0000 C CNN
-F 4 "000" H 8925 4675 60  0001 C CNN "PN"
+F 4 "2.54mm" H 8925 4675 50  0001 C CNN "Lead Spacing"
+F 5 "LM358P" H 8925 4675 50  0001 C CNN "Part Number"
+F 6 "https://www.digikey.com/products/en?keywords=296-1395-5-ND" H 8925 4675 50  0001 C CNN "Product Link"
+F 7 "https://www.digikey.com/products/en?keywords=A120347-ND" H 8925 4675 50  0001 C CNN "Additional Component"
 	1    8925 4675
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C8
+L Device:C C8
 U 1 1 5995F493
 P 8975 4225
 F 0 "C8" V 9200 4125 50  0000 L CNN
 F 1 "100nF" V 9125 4000 50  0000 L CNN
 F 2 "dancebots_fp:CAPC" H 9013 4075 50  0001 C CNN
 F 3 "" H 8975 4225 50  0000 C CNN
+F 4 "5.08mm" H 8975 4225 50  0001 C CNN "Lead Spacing"
+F 5 "C322C104M5U5TA7301" H 8975 4225 50  0001 C CNN "Part Number"
+F 6 "https://www.digikey.ch/products/en?keywords=399-9880-1-ND" H 8975 4225 50  0001 C CNN "Product Link"
+F 7 "50V" H 8975 4225 50  0001 C CNN "Voltage Rating"
 	1    8975 4225
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R3
+L Device:R R3
 U 1 1 5995F5BB
 P 9525 2250
 F 0 "R3" V 9605 2250 50  0000 C CNN
 F 1 "10" V 9525 2250 50  0000 C CNN
 F 2 "dancebots_fp:RES" V 9455 2250 50  0001 C CNN
 F 3 "" H 9525 2250 50  0000 C CNN
-F 4 "000" H 9525 2250 60  0001 C CNN "PN"
+F 4 "10.16mm" H 9525 2250 50  0001 C CNN "Lead Spacing"
+F 5 "CF14JT10R0" H 9525 2250 50  0001 C CNN "Part Number"
+F 6 "0.25W" H 9525 2250 50  0001 C CNN "Power Rating"
+F 7 "https://www.digikey.com/products/en?keywords=CF14JT10R0CT-ND" H 9525 2250 50  0001 C CNN "Product Link"
 	1    9525 2250
 	0    1    1    0   
 $EndComp
 $Comp
-L R R2
+L Device:R R2
 U 1 1 5995F709
 P 9275 2800
 F 0 "R2" V 9355 2800 50  0000 C CNN
 F 1 "10k" V 9275 2800 50  0000 C CNN
 F 2 "dancebots_fp:RES" V 9205 2800 50  0001 C CNN
 F 3 "" H 9275 2800 50  0000 C CNN
-F 4 "000" H 9275 2800 60  0001 C CNN "PN"
+F 4 "10.16mm" H 9275 2800 50  0001 C CNN "Lead Spacing"
+F 5 "CF14JT10K0" H 9275 2800 50  0001 C CNN "Part Number"
+F 6 "0.25W" H 9275 2800 50  0001 C CNN "Power Rating"
+F 7 "https://www.digikey.com/products/en?keywords=CF14JT10K0CT-ND" H 9275 2800 50  0001 C CNN "Product Link"
 	1    9275 2800
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C6
-U 1 1 5995F78E
-P 9275 2500
-F 0 "C6" H 9075 2475 50  0000 L CNN
-F 1 "47nF" H 9000 2550 50  0000 L CNN
-F 2 "dancebots_fp:CAPC" H 9313 2350 50  0001 C CNN
-F 3 "" H 9275 2500 50  0000 C CNN
-F 4 "000" H 9275 2500 60  0001 C CNN "PN"
-	1    9275 2500
-	-1   0    0    1   
-$EndComp
-$Comp
-L GND #PWR01
+L power:GND #PWR01
 U 1 1 5995FE16
 P 1475 775
 F 0 "#PWR01" H 1475 525 50  0001 C CNN
@@ -252,7 +236,7 @@ F 3 "" H 1475 775 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +BATT #PWR02
+L power:+BATT #PWR02
 U 1 1 5995FFF4
 P 675 775
 F 0 "#PWR02" H 675 625 50  0001 C CNN
@@ -263,7 +247,7 @@ F 3 "" H 675 775 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L PWR_FLAG #FLG03
+L power:PWR_FLAG #FLG03
 U 1 1 5996002C
 P 675 775
 F 0 "#FLG03" H 675 870 50  0001 C CNN
@@ -274,7 +258,7 @@ F 3 "" H 675 775 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG04
+L power:PWR_FLAG #FLG04
 U 1 1 599600B5
 P 1475 775
 F 0 "#FLG04" H 1475 870 50  0001 C CNN
@@ -286,7 +270,7 @@ F 3 "" H 1475 775 50  0000 C CNN
 $EndComp
 NoConn ~ 8850 2250
 $Comp
-L GND #PWR05
+L power:GND #PWR05
 U 1 1 59960414
 P 8750 2250
 F 0 "#PWR05" H 8750 2000 50  0001 C CNN
@@ -297,19 +281,22 @@ F 3 "" H 8750 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 JP18
+L Connector_Generic:Conn_01x02 JP18
 U 1 1 5996056A
-P 10500 2000
-F 0 "JP18" H 10525 2225 50  0000 C CNN
-F 1 "SPEAKER" H 10600 2150 50  0000 C CNN
-F 2 "dancebots_fp:MOT-SPK-CONN" H 10500 2000 50  0001 C CNN
-F 3 "" H 10500 2000 50  0000 C CNN
-F 4 "000" H 10500 2000 60  0001 C CNN "PN"
-	1    10500 2000
+P 10500 1950
+F 0 "JP18" H 10525 2175 50  0000 C CNN
+F 1 "SPEAKER" H 10600 2100 50  0000 C CNN
+F 2 "dancebots_fp:MOT-SPK-CONN" H 10500 1950 50  0001 C CNN
+F 3 "" H 10500 1950 50  0000 C CNN
+F 4 "S2B-PH-K-S" H 10500 1950 50  0001 C CNN "Part Number"
+F 5 "2mm" H 10500 1950 50  0001 C CNN "Lead Spacing"
+F 6 "https://www.digikey.com/products/en?keywords=455-1719-ND" H 10500 1950 50  0001 C CNN "Product Link"
+F 7 "https://www.sparkfun.com/products/9914" H 10500 1950 50  0001 C CNN "Additional Component"
+	1    10500 1950
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR06
+L power:GND #PWR06
 U 1 1 599606AD
 P 10300 2250
 F 0 "#PWR06" H 10300 2000 50  0001 C CNN
@@ -320,7 +307,7 @@ F 3 "" H 10300 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR07
+L power:+5V #PWR07
 U 1 1 59960759
 P 8750 1300
 F 0 "#PWR07" H 8750 1150 50  0001 C CNN
@@ -331,7 +318,7 @@ F 3 "" H 8750 1300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR08
+L power:GND #PWR08
 U 1 1 599609B1
 P 8275 2250
 F 0 "#PWR08" H 8275 2000 50  0001 C CNN
@@ -342,7 +329,7 @@ F 3 "" H 8275 2250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR09
+L power:GND #PWR09
 U 1 1 59960A8B
 P 9150 1500
 F 0 "#PWR09" H 9150 1250 50  0001 C CNN
@@ -355,7 +342,7 @@ $EndComp
 Text Label 8025 1850 0    60   ~ 0
 MP3_L
 $Comp
-L GND #PWR010
+L power:GND #PWR010
 U 1 1 59961102
 P 9275 2950
 F 0 "#PWR010" H 9275 2700 50  0001 C CNN
@@ -368,112 +355,152 @@ $EndComp
 Text Notes 7925 900  0    197  ~ 39
 AUDIO AMPLIFIER
 $Comp
-L LED LED0
+L Device:LED LED0
 U 1 1 59BE582C
 P 900 7150
 F 0 "LED0" H 900 7250 50  0000 C CNN
 F 1 "LED" H 900 7050 50  0000 C CNN
 F 2 "dancebots_fp:LED" H 900 7150 50  0001 C CNN
 F 3 "" H 900 7150 50  0001 C CNN
+F 4 "5mm" H 900 7150 50  0001 C CNN "Diameter"
+F 5 "" H 900 7150 50  0001 C CNN "If"
+F 6 "2.54mm" H 900 7150 50  0001 C CNN "Lead Spacing"
+F 7 "https://www.sparkfun.com/products/9662" H 900 7150 50  0001 C CNN "Product Link"
 	1    900  7150
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED LED1
+L Device:LED LED1
 U 1 1 59BE59F5
 P 1200 7150
 F 0 "LED1" H 1200 7250 50  0000 C CNN
 F 1 "LED" H 1200 7050 50  0000 C CNN
 F 2 "dancebots_fp:LED" H 1200 7150 50  0001 C CNN
 F 3 "" H 1200 7150 50  0001 C CNN
+F 4 "5mm" H 1200 7150 50  0001 C CNN "Diameter"
+F 5 "" H 1200 7150 50  0001 C CNN "If"
+F 6 "2.54mm" H 1200 7150 50  0001 C CNN "Lead Spacing"
+F 7 "https://www.sparkfun.com/products/9662" H 1200 7150 50  0001 C CNN "Product Link"
 	1    1200 7150
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED LED2
+L Device:LED LED2
 U 1 1 59BE5C39
 P 1500 7150
 F 0 "LED2" H 1500 7250 50  0000 C CNN
 F 1 "LED" H 1500 7050 50  0000 C CNN
 F 2 "dancebots_fp:LED" H 1500 7150 50  0001 C CNN
 F 3 "" H 1500 7150 50  0001 C CNN
+F 4 "5mm" H 1500 7150 50  0001 C CNN "Diameter"
+F 5 "" H 1500 7150 50  0001 C CNN "If"
+F 6 "2.54mm" H 1500 7150 50  0001 C CNN "Lead Spacing"
+F 7 "https://www.sparkfun.com/products/9662" H 1500 7150 50  0001 C CNN "Product Link"
 	1    1500 7150
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED LED3
+L Device:LED LED3
 U 1 1 59BE5C95
 P 1800 7150
 F 0 "LED3" H 1800 7250 50  0000 C CNN
 F 1 "LED" H 1800 7050 50  0000 C CNN
 F 2 "dancebots_fp:LED" H 1800 7150 50  0001 C CNN
 F 3 "" H 1800 7150 50  0001 C CNN
+F 4 "5mm" H 1800 7150 50  0001 C CNN "Diameter"
+F 5 "" H 1800 7150 50  0001 C CNN "If"
+F 6 "2.54mm" H 1800 7150 50  0001 C CNN "Lead Spacing"
+F 7 "https://www.sparkfun.com/products/9662" H 1800 7150 50  0001 C CNN "Product Link"
 	1    1800 7150
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED LED4
+L Device:LED LED4
 U 1 1 59BE5CF8
 P 2200 7150
 F 0 "LED4" H 2200 7250 50  0000 C CNN
 F 1 "LED" H 2200 7050 50  0000 C CNN
 F 2 "dancebots_fp:LED" H 2200 7150 50  0001 C CNN
 F 3 "" H 2200 7150 50  0001 C CNN
+F 4 "5mm" H 2200 7150 50  0001 C CNN "Diameter"
+F 5 "" H 2200 7150 50  0001 C CNN "If"
+F 6 "2.54mm" H 2200 7150 50  0001 C CNN "Lead Spacing"
+F 7 "https://www.sparkfun.com/products/9662" H 2200 7150 50  0001 C CNN "Product Link"
 	1    2200 7150
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED LED5
+L Device:LED LED5
 U 1 1 59BE5D5C
 P 2500 7150
 F 0 "LED5" H 2500 7250 50  0000 C CNN
 F 1 "LED" H 2500 7050 50  0000 C CNN
 F 2 "dancebots_fp:LED" H 2500 7150 50  0001 C CNN
 F 3 "" H 2500 7150 50  0001 C CNN
+F 4 "5mm" H 2500 7150 50  0001 C CNN "Diameter"
+F 5 "" H 2500 7150 50  0001 C CNN "If"
+F 6 "2.54mm" H 2500 7150 50  0001 C CNN "Lead Spacing"
+F 7 "https://www.sparkfun.com/products/9662" H 2500 7150 50  0001 C CNN "Product Link"
 	1    2500 7150
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED LED6
+L Device:LED LED6
 U 1 1 59BE5DC3
 P 2800 7150
 F 0 "LED6" H 2800 7250 50  0000 C CNN
 F 1 "LED" H 2800 7050 50  0000 C CNN
 F 2 "dancebots_fp:LED" H 2800 7150 50  0001 C CNN
 F 3 "" H 2800 7150 50  0001 C CNN
+F 4 "5mm" H 2800 7150 50  0001 C CNN "Diameter"
+F 5 "" H 2800 7150 50  0001 C CNN "If"
+F 6 "2.54mm" H 2800 7150 50  0001 C CNN "Lead Spacing"
+F 7 "https://www.sparkfun.com/products/9662" H 2800 7150 50  0001 C CNN "Product Link"
 	1    2800 7150
 	0    -1   -1   0   
 $EndComp
 $Comp
-L LED LED7
+L Device:LED LED7
 U 1 1 59BE6070
 P 3100 7150
 F 0 "LED7" H 3100 7250 50  0000 C CNN
 F 1 "LED" H 3100 7050 50  0000 C CNN
 F 2 "dancebots_fp:LED" H 3100 7150 50  0001 C CNN
 F 3 "" H 3100 7150 50  0001 C CNN
+F 4 "5mm" H 3100 7150 50  0001 C CNN "Diameter"
+F 5 "" H 3100 7150 50  0001 C CNN "If"
+F 6 "2.54mm" H 3100 7150 50  0001 C CNN "Lead Spacing"
+F 7 "https://www.sparkfun.com/products/9662" H 3100 7150 50  0001 C CNN "Product Link"
 	1    3100 7150
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R_Pack04_SIP RN1
+L Device:R_Pack04_SIP RN1
 U 1 1 59BE6267
 P 1300 6550
 F 0 "RN1" V 700 6550 50  0000 C CNN
 F 1 "82" V 1900 6550 50  0000 C CNN
 F 2 "dancebots_fp:RN" V 1975 6550 50  0001 C CNN
 F 3 "" H 1300 6550 50  0001 C CNN
+F 4 "2.54mm" H 1300 6550 50  0001 C CNN "Lead Spacing"
+F 5 "4608X-102-820LF" H 1300 6550 50  0001 C CNN "Part Number"
+F 6 "0.3W" H 1300 6550 50  0001 C CNN "Power Rating"
+F 7 "https://www.digikey.com/products/en?keywords=4608X-2-820LF-ND" H 1300 6550 50  0001 C CNN "Product Link"
 	1    1300 6550
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Pack04_SIP RN2
+L Device:R_Pack04_SIP RN2
 U 1 1 59BE6319
 P 2600 6550
 F 0 "RN2" V 2000 6550 50  0000 C CNN
 F 1 "82" V 3200 6550 50  0000 C CNN
 F 2 "dancebots_fp:RN" V 3275 6550 50  0001 C CNN
 F 3 "" H 2600 6550 50  0001 C CNN
+F 4 "2.54mm" H 2600 6550 50  0001 C CNN "Lead Spacing"
+F 5 "4608X-102-820LF" H 2600 6550 50  0001 C CNN "Part Number"
+F 6 "0.3W" H 2600 6550 50  0001 C CNN "Power Rating"
+F 7 "https://www.digikey.com/products/en?keywords=4608X-2-820LF-ND" H 2600 6550 50  0001 C CNN "Product Link"
 	1    2600 6550
 	1    0    0    -1  
 $EndComp
@@ -494,7 +521,7 @@ LED6
 Text Label 3000 6750 3    60   ~ 0
 LED7
 $Comp
-L GND #PWR011
+L power:GND #PWR011
 U 1 1 59BE6B4C
 P 900 7450
 F 0 "#PWR011" H 900 7200 50  0001 C CNN
@@ -505,7 +532,7 @@ F 3 "" H 900 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR012
+L power:GND #PWR012
 U 1 1 59BE6BB5
 P 1200 7450
 F 0 "#PWR012" H 1200 7200 50  0001 C CNN
@@ -516,7 +543,7 @@ F 3 "" H 1200 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR013
+L power:GND #PWR013
 U 1 1 59BE6C17
 P 1500 7450
 F 0 "#PWR013" H 1500 7200 50  0001 C CNN
@@ -527,7 +554,7 @@ F 3 "" H 1500 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR014
+L power:GND #PWR014
 U 1 1 59BE6C79
 P 1800 7450
 F 0 "#PWR014" H 1800 7200 50  0001 C CNN
@@ -538,7 +565,7 @@ F 3 "" H 1800 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR015
+L power:GND #PWR015
 U 1 1 59BE6CDB
 P 2200 7450
 F 0 "#PWR015" H 2200 7200 50  0001 C CNN
@@ -549,7 +576,7 @@ F 3 "" H 2200 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR016
+L power:GND #PWR016
 U 1 1 59BE6D3D
 P 2500 7450
 F 0 "#PWR016" H 2500 7200 50  0001 C CNN
@@ -560,7 +587,7 @@ F 3 "" H 2500 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR017
+L power:GND #PWR017
 U 1 1 59BE6D9F
 P 2800 7450
 F 0 "#PWR017" H 2800 7200 50  0001 C CNN
@@ -571,7 +598,7 @@ F 3 "" H 2800 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR018
+L power:GND #PWR018
 U 1 1 59BE6E01
 P 3100 7450
 F 0 "#PWR018" H 3100 7200 50  0001 C CNN
@@ -584,7 +611,7 @@ $EndComp
 Text Notes 1600 6150 0    197  ~ 39
 LEDS
 $Comp
-L +BATT #PWR019
+L power:+BATT #PWR019
 U 1 1 59BE8734
 P 1175 1825
 F 0 "#PWR019" H 1175 1675 50  0001 C CNN
@@ -595,18 +622,22 @@ F 3 "" H 1175 1825 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C1
+L Device:C C1
 U 1 1 5995DD43
 P 1175 1975
 F 0 "C1" H 1200 2075 50  0000 L CNN
 F 1 "100nF" H 1200 1875 50  0000 L CNN
 F 2 "dancebots_fp:CAPC" H 1213 1825 50  0001 C CNN
 F 3 "" H 1175 1975 50  0000 C CNN
+F 4 "5.08mm" H 1175 1975 50  0001 C CNN "Lead Spacing"
+F 5 "C322C104M5U5TA7301" H 1175 1975 50  0001 C CNN "Part Number"
+F 6 "https://www.digikey.ch/products/en?keywords=399-9880-1-ND" H 1175 1975 50  0001 C CNN "Product Link"
+F 7 "50V" H 1175 1975 50  0001 C CNN "Voltage Rating"
 	1    1175 1975
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR020
+L power:GND #PWR020
 U 1 1 59BE9967
 P 1175 2125
 F 0 "#PWR020" H 1175 1875 50  0001 C CNN
@@ -617,7 +648,7 @@ F 3 "" H 1175 2125 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR021
+L power:GND #PWR021
 U 1 1 59BE9A3D
 P 1725 2125
 F 0 "#PWR021" H 1725 1875 50  0001 C CNN
@@ -628,7 +659,7 @@ F 3 "" H 1725 2125 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR022
+L power:+5V #PWR022
 U 1 1 59BE9FD2
 P 2250 1825
 F 0 "#PWR022" H 2250 1675 50  0001 C CNN
@@ -639,7 +670,7 @@ F 3 "" H 2250 1825 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR023
+L power:GND #PWR023
 U 1 1 59BEA616
 P 2250 2125
 F 0 "#PWR023" H 2250 1875 50  0001 C CNN
@@ -650,7 +681,7 @@ F 3 "" H 2250 2125 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR024
+L power:GND #PWR024
 U 1 1 59BEB876
 P 2900 2225
 F 0 "#PWR024" H 2900 1975 50  0001 C CNN
@@ -661,7 +692,7 @@ F 3 "" H 2900 2225 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR025
+L power:+5V #PWR025
 U 1 1 59BEB97F
 P 2900 1625
 F 0 "#PWR025" H 2900 1475 50  0001 C CNN
@@ -676,7 +707,7 @@ POWER SUPPLY
 Text Notes 1000 3200 0    197  ~ 39
 H-BRIDGE
 $Comp
-L GND #PWR026
+L power:GND #PWR026
 U 1 1 59BED220
 P 3125 4275
 F 0 "#PWR026" H 3125 4025 50  0001 C CNN
@@ -687,7 +718,7 @@ F 3 "" H 3125 4275 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR027
+L power:+5V #PWR027
 U 1 1 59BED519
 P 3125 3875
 F 0 "#PWR027" H 3125 3725 50  0001 C CNN
@@ -698,7 +729,7 @@ F 3 "" H 3125 3875 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +BATT #PWR028
+L power:+BATT #PWR028
 U 1 1 59BEDA44
 P 1425 4575
 F 0 "#PWR028" H 1425 4425 50  0001 C CNN
@@ -725,7 +756,7 @@ D2B
 Text Label 2625 3975 0    60   ~ 0
 D2A
 $Comp
-L GND #PWR029
+L power:GND #PWR029
 U 1 1 59BEEA0A
 P 1075 4275
 F 0 "#PWR029" H 1075 4025 50  0001 C CNN
@@ -740,7 +771,7 @@ MOT2+
 Text Label 2625 4375 0    60   ~ 0
 MOT2-
 $Comp
-L +5V #PWR030
+L power:+5V #PWR030
 U 1 1 59BF0A38
 P 4350 1275
 F 0 "#PWR030" H 4350 1125 50  0001 C CNN
@@ -751,7 +782,7 @@ F 3 "" H 4350 1275 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR031
+L power:GND #PWR031
 U 1 1 59BF0D60
 P 4350 1575
 F 0 "#PWR031" H 4350 1325 50  0001 C CNN
@@ -762,7 +793,7 @@ F 3 "" H 4350 1575 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR032
+L power:GND #PWR032
 U 1 1 59BF0F75
 P 4350 2875
 F 0 "#PWR032" H 4350 2625 50  0001 C CNN
@@ -804,47 +835,60 @@ Text Label 6800 1975 0    60   ~ 0
 LED6
 NoConn ~ 6800 2875
 $Comp
-L CONN_01X03 J4
+L Connector_Generic:Conn_01x03 J4
 U 1 1 59BF36F8
 P 5100 4400
 F 0 "J4" H 5100 4600 50  0000 C CNN
 F 1 "MP3 Player" V 5200 4400 50  0000 C CNN
 F 2 "dancebots_fp:MP3" H 5100 4400 50  0001 C CNN
 F 3 "" H 5100 4400 50  0001 C CNN
+F 4 "CA-2207" H 5100 4400 50  0001 C CNN "Part Number"
+F 5 "https://www.digikey.com/products/en?keywords=CP-2207-ND%09" H 5100 4400 50  0001 C CNN "Product Link"
 	1    5100 4400
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 J3
+L Connector_Generic:Conn_01x02 J3
 U 1 1 59BF3E30
-P 5100 5250
-F 0 "J3" H 5100 5400 50  0000 C CNN
-F 1 "MOT1-R" V 5200 5250 50  0000 C CNN
-F 2 "dancebots_fp:MOT-SPK-CONN" H 5100 5250 50  0001 C CNN
-F 3 "" H 5100 5250 50  0001 C CNN
-	1    5100 5250
+P 5100 5200
+F 0 "J3" H 5100 5350 50  0000 C CNN
+F 1 "MOT1-R" V 5200 5200 50  0000 C CNN
+F 2 "dancebots_fp:MOT-SPK-CONN" H 5100 5200 50  0001 C CNN
+F 3 "" H 5100 5200 50  0001 C CNN
+F 4 "S2B-PH-K-S" H 5100 5200 50  0001 C CNN "Part Number"
+F 5 "2mm" H 5100 5200 50  0001 C CNN "Lead Spacing"
+F 6 "https://www.digikey.com/products/en?keywords=455-1719-ND" H 5100 5200 50  0001 C CNN "Product Link"
+F 7 "https://www.sparkfun.com/products/9914" H 5100 5200 50  0001 C CNN "Additional Component"
+	1    5100 5200
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 J2
+L Connector_Generic:Conn_01x02 J2
 U 1 1 59BF4431
-P 5100 5875
-F 0 "J2" H 5100 6025 50  0000 C CNN
-F 1 "MOT2-L" V 5200 5875 50  0000 C CNN
-F 2 "dancebots_fp:MOT-SPK-CONN" H 5100 5875 50  0001 C CNN
-F 3 "" H 5100 5875 50  0001 C CNN
-	1    5100 5875
+P 5100 5850
+F 0 "J2" H 5100 6000 50  0000 C CNN
+F 1 "MOT2-L" V 5200 5850 50  0000 C CNN
+F 2 "dancebots_fp:MOT-SPK-CONN" H 5100 5850 50  0001 C CNN
+F 3 "" H 5100 5850 50  0001 C CNN
+F 4 "S2B-PH-K-S" H 5100 5850 50  0001 C CNN "Part Number"
+F 5 "2mm" H 5100 5850 50  0001 C CNN "Lead Spacing"
+F 6 "https://www.digikey.com/products/en?keywords=455-1719-ND" H 5100 5850 50  0001 C CNN "Product Link"
+F 7 "https://www.sparkfun.com/products/9914" H 5100 5850 50  0001 C CNN "Additional Component"
+	1    5100 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 J1
+L Connector_Generic:Conn_01x02 J1
 U 1 1 59BF44C1
-P 5100 6450
-F 0 "J1" H 5100 6600 50  0000 C CNN
-F 1 "BATTERY" V 5200 6450 50  0000 C CNN
-F 2 "dancebots_fp:BATT" H 5100 6450 50  0001 C CNN
-F 3 "" H 5100 6450 50  0001 C CNN
-	1    5100 6450
+P 5100 6400
+F 0 "J1" H 5100 6550 50  0000 C CNN
+F 1 "BATTERY" V 5200 6400 50  0000 C CNN
+F 2 "dancebots_fp:BATT" H 5100 6400 50  0001 C CNN
+F 3 "" H 5100 6400 50  0001 C CNN
+F 4 "2.54mm" H 5100 6400 50  0001 C CNN "Lead Spacing"
+F 5 "SBH341AS" H 5100 6400 50  0001 C CNN "Part Number"
+F 6 "https://www.digikey.com/products/en?keywords=SBH-341AS" H 5100 6400 50  0001 C CNN "Product Link"
+	1    5100 6400
 	1    0    0    -1  
 $EndComp
 Text Notes 4300 900  0    197  ~ 39
@@ -858,7 +902,7 @@ MP3_L
 Text Label 4900 4400 2    60   ~ 0
 MP3_R
 $Comp
-L GND #PWR033
+L power:GND #PWR033
 U 1 1 59BF8AB4
 P 4775 4500
 F 0 "#PWR033" H 4775 4250 50  0001 C CNN
@@ -872,12 +916,12 @@ Text Label 4900 5300 2    60   ~ 0
 MOT1+
 Text Label 4900 5200 2    60   ~ 0
 MOT1-
-Text Label 4900 5825 2    60   ~ 0
+Text Label 4900 5850 2    60   ~ 0
 MOT2+
-Text Label 4900 5925 2    60   ~ 0
+Text Label 4900 5950 2    60   ~ 0
 MOT2-
 $Comp
-L GND #PWR034
+L power:GND #PWR034
 U 1 1 59BF946C
 P 4750 6500
 F 0 "#PWR034" H 4750 6250 50  0001 C CNN
@@ -888,7 +932,7 @@ F 3 "" H 4750 6500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +BATT #PWR035
+L power:+BATT #PWR035
 U 1 1 59BF98B8
 P 4750 6400
 F 0 "#PWR035" H 4750 6250 50  0001 C CNN
@@ -899,7 +943,7 @@ F 3 "" H 4750 6400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR036
+L power:GND #PWR036
 U 1 1 59BFCBEE
 P 8825 4975
 F 0 "#PWR036" H 8825 4725 50  0001 C CNN
@@ -910,7 +954,7 @@ F 3 "" H 8825 4975 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR037
+L power:GND #PWR037
 U 1 1 59BFD019
 P 8525 4775
 F 0 "#PWR037" H 8525 4525 50  0001 C CNN
@@ -923,7 +967,7 @@ $EndComp
 Text Label 8625 4575 2    60   ~ 0
 MP3_R
 $Comp
-L +5V #PWR038
+L power:+5V #PWR038
 U 1 1 59BFD34E
 P 8825 4225
 F 0 "#PWR038" H 8825 4075 50  0001 C CNN
@@ -934,7 +978,7 @@ F 3 "" H 8825 4225 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR039
+L power:GND #PWR039
 U 1 1 59BFD7FE
 P 9225 4225
 F 0 "#PWR039" H 9225 3975 50  0001 C CNN
@@ -951,17 +995,14 @@ Wire Wire Line
 Wire Wire Line
 	9975 2250 9675 2250
 Wire Wire Line
-	9150 1950 9375 1950
+	9150 1950 9275 1950
 Wire Wire Line
 	9275 2350 9275 1950
 Connection ~ 9275 1950
 Wire Wire Line
-	9675 1950 10300 1950
-Connection ~ 9975 1950
-Wire Wire Line
 	10300 2050 10300 2250
 Wire Wire Line
-	8750 1300 8750 1650
+	8750 1300 8750 1400
 Connection ~ 8750 1400
 Wire Wire Line
 	8275 2250 8275 2050
@@ -1059,4 +1100,58 @@ Wire Wire Line
 	1500 7300 1500 7450
 Wire Wire Line
 	1800 7450 1800 7300
+Wire Wire Line
+	9275 1950 9375 1950
+Wire Wire Line
+	8750 1400 8750 1650
+$Comp
+L Device:C C9
+U 1 1 5995E0FA
+P 9975 2100
+F 0 "C9" H 10000 2200 50  0000 L CNN
+F 1 "10pF" H 10000 2000 50  0000 L CNN
+F 2 "dancebots_fp:CAPC" H 10013 1950 50  0001 C CNN
+F 3 "" H 9975 2100 50  0000 C CNN
+F 4 "5.08mm" H 9975 2100 50  0001 C CNN "Lead Spacing"
+F 5 "C317C100J5G5TA" H 9975 2100 50  0001 C CNN "Part Number"
+F 6 "https://www.digikey.ch/products/en?keywords=399-8910-ND%09" H 9975 2100 50  0001 C CNN "Product Link"
+F 7 "50V" H 9975 2100 50  0001 C CNN "Voltage Rating"
+	1    9975 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5995F78E
+P 9275 2500
+F 0 "C6" H 9075 2475 50  0000 L CNN
+F 1 "47nF" H 9000 2550 50  0000 L CNN
+F 2 "dancebots_fp:CAPC" H 9313 2350 50  0001 C CNN
+F 3 "" H 9275 2500 50  0000 C CNN
+F 4 "5.08mm" H 9275 2500 50  0001 C CNN "Lead Spacing"
+F 5 "C322C473K5R5TA7301" H 9275 2500 50  0001 C CNN "Part Number"
+F 6 "https://www.digikey.ch/products/en?keywords=399-13939-1-ND" H 9275 2500 50  0001 C CNN "Product Link"
+F 7 "50V" H 9275 2500 50  0001 C CNN "Voltage Rating"
+	1    9275 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5995E02A
+P 9000 1400
+F 0 "C5" V 8775 1350 50  0000 L CNN
+F 1 "100nF" V 8850 1350 50  0000 L CNN
+F 2 "dancebots_fp:CAPC" H 9038 1250 50  0001 C CNN
+F 3 "" H 9000 1400 50  0000 C CNN
+F 4 "5.08mm" H 9000 1400 50  0001 C CNN "Lead Spacing"
+F 5 "C322C104M5U5TA7301" H 9000 1400 50  0001 C CNN "Part Number"
+F 6 "https://www.digikey.ch/products/en?keywords=399-9880-1-ND" H 9000 1400 50  0001 C CNN "Product Link"
+F 7 "50V" H 9000 1400 50  0001 C CNN "Voltage Rating"
+	1    9000 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9675 1950 9975 1950
+Connection ~ 9975 1950
+Wire Wire Line
+	9975 1950 10300 1950
 $EndSCHEMATC
