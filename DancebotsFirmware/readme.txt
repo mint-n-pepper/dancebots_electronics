@@ -1,3 +1,0 @@
-- Program muP using AVRISP-MK2
-- Make sure CKDIV8 fuse is disabled such that muP runs at 8MHZ
-- Production File in this folder works with Atmel Studio V7. Can be recreated easily in the device programming dialogue. This allows faster programming since fuses are set together with flash programming.

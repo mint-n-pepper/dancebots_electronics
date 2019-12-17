@@ -5,9 +5,29 @@
 * @author  Raymond Oung 
 * @version V1.0
 * @date    11/03/2012
-* @brief   MP3DanceBot v.3 Firmware
+* @brief   MP3DanceBot v1.0 Firmware for ATTiny 261A - 861A
+*
+* FUSE CONFIG ****************************************************************
+* Extended byte: 0xFF
+* High byte:     0xDF
+* Low byte:      0xE2
 ******************************************************************************
+* Copyright (C) 2011 - 2019 mint & pepper
+*
+* This program is free software: you can redistribute it and/or modify it
+* under the terms of the GNU General Public License as published by the Free
+* Software Foundation, either version 3 of the License, or (at your option)
+* any later version.
+*
+* This program is distributed in the hope that it will be useful, but WITHOUT
+* ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+* FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+* more details.
+*
+* You should have received a copy of the GNU General Public License along with
+* this program. If not, see <https://www.gnu.org/licenses/>.
 */ 
+
 #include <avr/sleep.h>
 #include <avr/wdt.h> 
 #include "avr/io.h"
@@ -17,7 +37,7 @@
 /** @addtogroup MP3DANCEBOT_Private_Defines
   * @{
   */ 
-#define	__AVR_ATtiny861__ 	1
+#define	__AVR_ATtiny261__ 	1
 #define OSCSPEED	8000000 // [Hz]
 
 // MOTOR DEFINES
