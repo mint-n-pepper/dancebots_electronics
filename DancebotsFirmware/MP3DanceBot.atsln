@@ -2,7 +2,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Atmel Studio Solution File, Format Version 11.00
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "MP3DanceBot_6_2", "MP3DanceBot\MP3DanceBot_6_2.cproj", "{DBBB0C0E-E8C5-4883-B9F9-3B39862063F4}"
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "MP3_Dancebot_261A", "MP3_Dancebot_261A\MP3_Dancebot_261A.cproj", "{DCE6C7E3-EE26-4D79-826B-08594B9AD897}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "MP3_Dancebot_861A", "MP3_Dancebot_861A\MP3_Dancebot_861A.cproj", "{BAC6714F-F831-41B5-A4C1-B0EF15A1A9D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,10 +12,14 @@ Global
 		Release|AVR = Release|AVR
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DBBB0C0E-E8C5-4883-B9F9-3B39862063F4}.Debug|AVR.ActiveCfg = Debug|AVR
-		{DBBB0C0E-E8C5-4883-B9F9-3B39862063F4}.Debug|AVR.Build.0 = Debug|AVR
-		{DBBB0C0E-E8C5-4883-B9F9-3B39862063F4}.Release|AVR.ActiveCfg = Release|AVR
-		{DBBB0C0E-E8C5-4883-B9F9-3B39862063F4}.Release|AVR.Build.0 = Release|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|AVR.ActiveCfg = Debug|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|AVR.Build.0 = Debug|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.ActiveCfg = Release|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.Build.0 = Release|AVR
+		{BAC6714F-F831-41B5-A4C1-B0EF15A1A9D0}.Debug|AVR.ActiveCfg = Debug|AVR
+		{BAC6714F-F831-41B5-A4C1-B0EF15A1A9D0}.Debug|AVR.Build.0 = Debug|AVR
+		{BAC6714F-F831-41B5-A4C1-B0EF15A1A9D0}.Release|AVR.ActiveCfg = Release|AVR
+		{BAC6714F-F831-41B5-A4C1-B0EF15A1A9D0}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
