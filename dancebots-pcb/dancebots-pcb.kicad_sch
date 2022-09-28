@@ -6,8 +6,8 @@
 
   (title_block
     (title "Dancebots PCB")
-    (date "2022-09-15")
-    (rev "v8.0")
+    (date "2022-09-27")
+    (rev "v8.1")
     (company "mint & pepper")
     (comment 1 "Deisgned by Raymond Oung")
     (comment 2 "Transfer to Kicad (v6.0) by Benjamin Geisser")
