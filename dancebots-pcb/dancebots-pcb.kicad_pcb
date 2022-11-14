@@ -1883,7 +1883,7 @@
   (gr_text "Designed in Switzerland" (at 137 108) (layer "B.SilkS") (tstamp 00000000-0000-0000-0000-00005df898dd)
     (effects (font (size 1.1 1.1) (thickness 0.17)) (justify left mirror))
   )
-  (gr_text "MP3 DanceBot V8.1\nmint & pepper 2022" (at 137.1 114) (layer "B.SilkS") (tstamp 005052ec-e078-422c-8c60-ea95aeb053cc)
+  (gr_text "MP3 DanceBot V8.2\nmint & pepper 2022" (at 137.1 114) (layer "B.SilkS") (tstamp 005052ec-e078-422c-8c60-ea95aeb053cc)
     (effects (font (size 1.1 1.1) (thickness 0.17)) (justify left mirror))
   )
   (gr_text "5" (at 127.5 143.4) (layer "F.SilkS") (tstamp 10483120-177f-449a-8537-e4667d78ea50)
