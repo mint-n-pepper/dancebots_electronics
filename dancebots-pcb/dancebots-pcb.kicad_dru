@@ -1,0 +1,9 @@
+(version 1)
+
+(rule "Pad to Track"
+   (constraint clearance (min 0.2mm))
+   (condition "A.Type == 'Pad' && (B.Type == 'Track' || B.Type == 'Zone') && A.Net != B.Net"))
+
+(rule "Hole to hole clearance(Different nets)"
+   (constraint hole_to_hole (min 0.5mm))
+   (condition "A.isPlated() && B.isPlated() && A.Net != B.Net"))
