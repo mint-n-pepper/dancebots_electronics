@@ -4,8 +4,13 @@ Here, you will find the PCB design data, ATTiny firmware, and additional hardwar
 
 For the Desktop Dancebots Editor source code, please refer to [its repository](https://github.com/philippReist/dancebots_gui).
 
+## Required Software
+KiCAD version 7.0 was used to generate the schematic and PCB design (v.8.3).
+
 ## Hardware BOM
-The bill of materials is available [here](https://drive.google.com/open?id=1H4aylC6xcZu8uulw1L1Zao0gHDbFx3T0). The folder also contains an example baseplate design.
+
+The bill of materials is available [~~here~~](https://drive.google.com/open?id=1H4aylC6xcZu8uulw1L1Zao0gHDbFx3T0). 
+
 
 ## Dancebots PCB
 In the subfolder ```dancebots_pcb```, you will find the [KiCAD](https://www.kicad-pcb.org/) design files, along with the Gerber files that you may use to manufacture the PCBs.
