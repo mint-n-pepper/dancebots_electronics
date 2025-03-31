@@ -19,10 +19,6 @@
 *.xml
 *.csv
 
-# Gerber/Drill Files
-*.gbr
-*.drl
-
 # specific binaries
 *.pdf
 *.png
